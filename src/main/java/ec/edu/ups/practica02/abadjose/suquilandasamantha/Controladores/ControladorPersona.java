@@ -43,6 +43,8 @@ public class ControladorPersona implements IControlador {
     public void list() {
         throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
+    
+    
 }
     
     
