@@ -18,14 +18,16 @@ public class Practica02AbadJoseSuquilandaSamantha {
 
     public static void main(String[] args) {
         IControlador controlador = new ControladorPersona();
-        int opcion = 0;
-        do {          
-            System.out.println("1.Ingreso de Cantante \n2.Ingreso de Compositor \n3. Agregar Clientes \n4.Imprimir persona \n5. Búsqueda de cantante por nombre de disco \n6. Búsqueda de compositor por nombre de canción \n7. Salir");
+        System.out.println("1.Ingreso de Cantante \n2.Ingreso de Compositor \n3. Agregar Clientes \n4.Imprimir persona \n5. Búsqueda de cantante por nombre de disco \n6. Búsqueda de compositor por nombre de canción \n7. Salir");
             Scanner scanner = new Scanner(System.in);
+            System.out.println("Ingrese una opcion: ");
+            int opcion = scanner.nextInt();
+        do {          
             switch (opcion) {
                 case 1:
                     Cantante c1 = new Cantante("Dpñ", 2, "sde", "sadwa", 2, "", 467);
                     controlador.create(c1);
+                    controlador.list();
                     break;
                 case 2:
                     
