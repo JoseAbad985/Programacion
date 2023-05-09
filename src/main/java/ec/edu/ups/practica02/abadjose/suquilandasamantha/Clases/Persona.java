@@ -16,7 +16,7 @@ public abstract class Persona {
     private String apellido;
     private int edad;
     private String nacionalidad;
-    private double salario;
+    double salario;
 
     public Persona(int codigo, String nombre, String apellido, int edad, String nacionalidad, double salario) {
         this.codigo = codigo;
@@ -117,4 +117,5 @@ public abstract class Persona {
     }
     
     public abstract double calcularSalario();
-}
+       
+    }

@@ -90,7 +90,20 @@ public class Compositor extends Persona{
     //sobreescritura del metodo abstracto de la clase Persona
     @Override
     public double calcularSalario() {
-        return 0.00;
+    
+        double salarioFinal = salario;
+
+        if (numeroDeComposiciones > 5) {
+            salarioFinal += 300;
+        }
+        if (cancionesTop100Billboard.size() >= 1 && cancionesTop100Billboard.size() <= 3) {
+            salarioFinal *= 1.1;
+        } else if (cancionesTop100Billboard.size() >= 4 && cancionesTop100Billboard.size() <= 6) {
+            salarioFinal *= 1.2;
+        } else if (cancionesTop100Billboard.size() > 6) {
+            salarioFinal *= 1.3;
+        }
+        return salarioFinal;
     }
     //Metodo agregarCanción
     public void agregarCancion(int codigo, String titulo, String letra, double tiempoEnMinutos){

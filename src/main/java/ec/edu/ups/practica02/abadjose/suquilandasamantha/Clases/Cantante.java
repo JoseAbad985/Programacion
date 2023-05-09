@@ -29,6 +29,11 @@ public class Cantante extends Persona {
         this.discografia = discografia;
     }
 
+    public Cantante(String nombreArtistico, int codigo, String nombre, String apellido, int edad, String nacionalidad, double salario) {
+        super(codigo, nombre, apellido, edad, nacionalidad, salario);
+        this.nombreArtistico = nombreArtistico;
+    }
+    
     public String getNombreArtistico() {
         return nombreArtistico;
     }
@@ -128,7 +133,24 @@ public class Cantante extends Persona {
 
     @Override
     public double calcularSalario() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+        
+        double salarioFinal = salario;
+
+        if (numeroDeSencillos > 10 && numeroDeGiras > 3) {
+            salarioFinal += 1000;
+        } else if (numeroDeSencillos >= 1 && numeroDeSencillos <= 10) {
+            salarioFinal *= 1.05;
+        }
+
+        if (numeroDeGiras >= 1 && numeroDeGiras <= 3) {
+            salarioFinal *= 1.03;
+        }
+
+        if (discografia.size()>=5) {
+            salarioFinal += 2000;
+        }
+
+        return salarioFinal;
     }
         public void agregarDisco(int codigo, String nombre, int anioDeLanzamiento){
         Disco disc = new Disco(codigo, nombre, anioDeLanzamiento);
