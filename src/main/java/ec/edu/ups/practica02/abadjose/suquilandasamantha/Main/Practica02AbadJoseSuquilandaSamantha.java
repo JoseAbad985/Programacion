@@ -22,7 +22,6 @@ public class Practica02AbadJoseSuquilandaSamantha {
         do {          
             System.out.println("1.Ingreso de Cantante \n2.Ingreso de Compositor \n3. Agregar Clientes \n4.Imprimir persona \n5. Búsqueda de cantante por nombre de disco \n6. Búsqueda de compositor por nombre de canción \n7. Salir");
             Scanner scanner = new Scanner(System.in);
-            opcion = Scanner.nextInt();
             switch (opcion) {
                 case 1:
                     Cantante c1 = new Cantante("Dpñ", 2, "sde", "sadwa", 2, "", 467);
