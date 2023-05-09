@@ -130,4 +130,8 @@ public class Cantante extends Persona {
     public double calcularSalario() {
         throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
+        public void agregarDisco(int codigo, String nombre, int anioDeLanzamiento){
+        Disco disc = new Disco(codigo, nombre, anioDeLanzamiento);
+        discografia.add(disc);
+    }
 }

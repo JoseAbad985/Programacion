@@ -98,8 +98,7 @@ public class Compositor extends Persona{
         cancionesTop100Billboard.add(cancion);
     }
     
-    public void agregarCliente(){
-        Cantante cliente = new Cantante(nombreArtistico, generoMusical, numeroDeSencillos, numeroDeConciertos, numeroDeGiras, discografia, codigo, nombre, apellido, edad, nacionalidad, salario);
-        
+     public void agregarCliente(Cantante cliente){
+        clientes.add(cliente);
     }
 }
