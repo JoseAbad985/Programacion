@@ -4,13 +4,8 @@
  */
 package ec.edu.ups.practica02.abadjose.suquilandasamantha.Clases;
 
-
 import java.util.Objects;
 
-/**
- *
- * @author ESTUDIANTE
- */
 public class Disco {
     private int codigo;
     private String nombre;
@@ -84,3 +79,4 @@ public class Disco {
     
     
 }
+

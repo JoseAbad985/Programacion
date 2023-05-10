@@ -8,10 +8,6 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
 
-/**
- *
- * @author ESTUDIANTE
- */
 public class Cantante extends Persona {
     private String nombreArtistico;
     private String generoMusical;
@@ -165,7 +161,3 @@ public class Cantante extends Persona {
     }
 }
 
-
-   
-    
-    

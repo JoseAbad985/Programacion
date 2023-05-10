@@ -137,10 +137,3 @@ public class ControladorPersona implements IControlador {
             return "ControladorPersona{" + "personas=" + personas + '}';
     }
 }
-    
-
-   
-
-    
-    
-    
